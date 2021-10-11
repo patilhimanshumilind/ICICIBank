@@ -1,0 +1,69 @@
+.btn {
+    color: $black;
+    font-family: $primary-font;
+    &:hover {
+        transition: 0.3s all ease;
+    }
+}
+
+.btn-red {
+    border: 0.75px solid $bell-bg;
+    padding: 7px 23px;
+    border-radius: 24px;
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: transparent;
+    color: $black;
+    &:hover {
+        background:  $bell-bg;
+        color: $white;
+    }
+}
+.btn-transparent {
+    border: 1px solid $btn-border;
+    padding: 0.4rem 1.7rem;
+    border-radius: 1.6rem;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    background: transparent;
+    color: $black;
+    &:hover {
+        background: $black;
+        color: $white;
+        border: 1px solid transparent;
+    }
+}
+
+.btn-table {
+    border: 1px solid $btn-border;
+    padding: 0.7rem 3.5rem 0.7rem 3.3rem;
+    border-radius: 1.6rem;
+    line-height: 1.9rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    background: $btn-border;
+    color: $black;
+    border: 1px solid rgba(9 ,51, 91, 0.31);
+    &:hover {
+        background: $black;
+        color: $btn-border;
+    }
+}
+
+.btn-darkblue {
+    border: 1px solid $btn-border;
+    padding: 0.7rem 2.1rem;
+    border-radius: 2.4rem;
+    line-height: 1.9rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: $light-blue;
+    color: $white;
+    &:hover {
+        background-color: $white;
+        color: $light-blue;
+        border: 1px solid $light-blue;
+    }
+}

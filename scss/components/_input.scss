@@ -1,0 +1,20 @@
+.form-group{
+    margin-bottom: 1.4rem;
+    .form-control{
+        height: 4.7rem;
+        border: 0.1rem solid $input-border;
+        border-radius: 2.5rem;
+        padding: 1.4rem 2.2rem;
+        font-size: 1.4rem;
+        &::placeholder{
+            color: $black;
+            font-size: 1.4rem;
+            letter-spacing: 0.05rem;
+        }
+        &:focus{
+            border: 0.1rem solid $input-border;
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem transparent;
+        }
+    }
+}

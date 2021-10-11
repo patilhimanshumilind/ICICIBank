@@ -1,0 +1,42 @@
+html {
+	font-size: 10px;
+}
+
+body {
+	font-family: $primary-font;
+	font-size: 1rem;
+	line-height: 1.4;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	li {
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: $black;
+	transition: 0.2s all;
+	&:focus, &:hover {
+		text-decoration: none;
+		color: rgba($color: $black, $alpha: 0.6);
+	}
+}
+
+.btn {
+	transition: 0.2s all;
+	&:focus {
+		outline: none;
+		box-shadow: none;
+	}
+}
+
+.container{
+	max-width: 1320px;
+}
+
