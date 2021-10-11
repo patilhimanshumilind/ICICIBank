@@ -257,7 +257,7 @@
 }
 }
 
-@media (max-width: 767px){
+@media (max-width: 992px){
     .main-content{
         padding: 15px 15px 15px!important;
         margin: 0 10px 10px;
@@ -275,9 +275,7 @@
                 margin-bottom: 0!important;
                }
            
-            .head_container{
-                margin: 1.6rem 0 0 0!important;
-            }
+            
             .graph-grid-content{
                 .graph-grid-left{
                     padding: 0!important;
@@ -317,3 +315,180 @@
     }
 }
 
+@media (min-width: 577px) and (max-width: 768px){
+    .graph-wrapper{
+        
+           .graph-grid{
+               margin-right: 0!important;
+                &:nth-child(1){
+
+                    margin-right: 15px!important;
+
+                }
+                &:nth-child(4){
+
+                    margin-right: 15px!important;
+                    margin-bottom: 0!important;
+
+                }
+                &:nth-child(5){
+
+                    
+                    margin-bottom: 0!important;
+
+                }
+                .head_container{
+                    margin: 5px 0 0 0!important;
+                }
+               .graph-grid-content{
+                .graph-grid-left{
+                    div{
+                        span{
+                            font-size: 10px!important;
+                        }
+                        .outward_transaction{
+                            font-size: 10px!important;   
+                        }
+                    }
+                    .grid-amount{
+                        font-size: 14px!important;
+                    }
+                    .outward-amount{
+                        font-size: 14px!important;
+                    }
+                   
+                }
+                
+            }
+                
+        
+        }
+        
+}
+}
+
+@media (min-width: 769px) and (max-width: 992px){
+    .graph-wrapper{
+        
+           .graph-grid{
+               margin-right: 0!important;
+                &:nth-child(1){
+
+                    margin-right: 15px!important;
+
+                }
+                &:nth-child(4){
+
+                    margin-right: 15px!important;
+                    margin-bottom: 0!important;
+
+                }
+                &:nth-child(5){
+
+                    
+                    margin-bottom: 0!important;
+
+                }
+                .head_container{
+                    margin: 5px 0 0 0!important;
+                }
+               /* .graph-grid-content{
+                .graph-grid-left{
+                    div{
+                        span{
+                            font-size: 10px!important;
+                        }
+                        .outward_transaction{
+                            font-size: 10px!important;   
+                        }
+                    }
+                    .grid-amount{
+                        font-size: 14px!important;
+                    }
+                    .outward-amount{
+                        font-size: 14px!important;
+                    }
+                   
+                }
+                
+            } */
+                
+        
+        }
+        
+}
+}
+
+
+@media (min-width: 993px) and (max-width: 1349px){
+    .main-content{
+        padding: 15px 15px 15px!important;
+        
+        border-radius: 20px!important;
+    }
+    .graph-wrapper {
+        width: auto!important;
+        margin: 20px 0 0px 15px!important;
+        .graph-grid{
+            width: 100%;
+            height: 100%;
+            margin-right: 0!important;
+                &:nth-child(1){
+
+                    margin-right: 15px!important;
+
+                }
+                &:nth-child(4){
+
+                    margin-right: 15px!important;
+                    margin-bottom: 0!important;
+
+                }
+                &:nth-child(5){
+
+                    
+                    margin-bottom: 0!important;
+
+                }
+                .graph-grid-content{
+                    .graph-grid-left{
+                    padding: 0!important;
+                    div{
+                        padding: 0!important;
+                    }
+                   
+                    .dashed-border{
+                        padding: 50px 36px 50px!important;
+                    }
+                     .grid-amount{
+                        font-size: 17px!important;
+                    }
+                    .outward-amount{
+                        font-size: 17px!important;
+                    }
+                }
+                .grid-graph-right{
+                    height: 100%!important;
+                    width: auto!important;
+                }
+                }
+        }
+
+         #graph-container{
+            width: 100%!important;
+            height: 100%!important;
+        }
+        #graph-container1{
+            width: 100%!important;
+            height: 100%!important;
+        }
+        #graph-container2{
+            width: 100%!important;
+            height: 100%!important;
+        }
+        #graph-container3{
+            width: 100%!important;
+            height: 100%!important;
+        }
+    }
+}
