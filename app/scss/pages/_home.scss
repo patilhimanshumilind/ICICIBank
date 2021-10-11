@@ -24,6 +24,7 @@
                         margin-top: 2rem;
                         @include breakpoint(mobile-max) {
                             font-size: 4rem;
+                            line-height: 4rem;
                         }
                     }
                     .services-heading {
@@ -64,7 +65,7 @@
                         }
                         @include breakpoint(mobile-max){
                             margin-top: 5rem;
-                            padding: 3.1rem 4.1rem;
+                            padding: 1rem 4.1rem;
                             background-image: linear-gradient(to bottom, $orange-shade2 36%, $brown-shade 76%);
                         }
                         .orange-card{
@@ -76,7 +77,11 @@
                             }
                             &:last-of-type {
                                 border-right: 0.1rem solid transparent;
-                                // padding-right: 0;
+                                @include breakpoint(mobile-max){
+                                    border-right: none;
+                                    border-bottom: none;
+                                    padding-bottom: 0;
+                                }
                             }
                         }
                         .orange-card-content {
@@ -174,12 +179,16 @@
                                 padding-bottom: 4rem;
                                 background-color: rgba($color: $black, $alpha: 0.05);
                                 @include breakpoint(mobile-max){
-                                    padding: 0 2rem 4rem;
+                                    padding: 0 2rem 2rem;
+                                    margin-top: 2rem;
                                 }
                                 .btn {
                                     height: 4.6rem;
                                     min-width: 100%;
                                     margin-top: 3.8rem;
+                                    @include breakpoint(mobile-max){
+                                        margin-top: 2rem;
+                                    }
                                 }
                             }
                         }
