@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bank Services</title>
+    <!-- Normal CSS -->
+    <link rel="stylesheet" href="./css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Minified CSS -->
+    <!-- <link rel="stylesheet" href="css/bundle.min.css"> -->
+</head>
+
+<body>
+    <header>
+        <div class="bank-header">
+            <div class="fluid-container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="bank-title-wraper">
+                        <a class="navbar-brand" href="#">
+                            <span class="hand-shake">
+                                <img src="./images/Image 42.svg" class="img-fluid" alt="">
+                            </span>
+                            <span class="bank-title">
+                                Navjeevan Bank
+                            </span>
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="login-wraper">
+                                <span>Last Login</span>
+                                <span>17:10_Aug 30</span>
+                            </li>
+                            <li class="nav-item personalize-dashboard-wraper">
+                                <a class="nav-link" href="#">
+                                    <span class="add-icon">+</span>
+                                    <span class="personalize-dashboard">Personalize Dashboard</span></a>
+                            </li>
+                            <li class="nav-item account-setting-wraper">
+                                <a class="nav-link" href="#">
+                                    <span class="account-setting">Account Settings</span>
+                                    <span class="icon-setting"></span>
+                                </a>
+                            </li>
+                            <li class="bell-icon-wraper">
+                                <button class="bell-btn" type="button">
+                                    <span class="icon-notification"><span class="bell-badges">35</span></span>
+                                </button>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="user-details-wraper">
+            <div class="fluid-container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="side-bar">
+                            <div class="dashboard">
+                                <ul class="dashboard-heading-wraper">
+                                    <div class="dashboard-heading">
+                                        <span class="icon-dashboard"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
+                                        <h6>Dashboard</h6>
+                                    </div>
+                                    <div class="summary-list">
+                                        <li><a href="">Account Summary</a></li>
+                                        <li><a href="">Products</a></li>
+                                    </div>
+                                </ul>
+                                <ul class="payment-list">
+                                    <li>
+                                        <a href="" class="payment-link">
+                                            <span class="icon-Atm payment-icon"><span class="path1"></span><span class="path2"></span></span>
+                                            <span class="payment-text"> ATM</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="payment-link">
+                                            <span class="icon-IMPS payment-icon"></span>
+                                            
+                                            <span class="payment-text"> IMPS</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="payment-link">
+                                            <span class="icon-IMPS payment-icon"></span>
+                                            
+                                            <span class="payment-text"> UPI</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="payment-link">
+                                            <span class="icon-CTS payment-icon"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></span>
+                                            
+                                            <span class="payment-text"> CTS</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="bank-logo-headin-wraper">
+                                    <h4 class="bank-logo-heading">
+                                        <span class="extra-bold-heaading">ICICI</span>
+                                        <span>@ 2021</span>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="userAccount col-lg-9">
+                        <div class="Account_container">
+                            <div class="dashboard_imps">
+                                <div class="breadcrumb_container">
+                                    <nav aria-label="breadcrumb">
+                                        <ol class="breadcrumb">
+                                          <li class="breadcrumb-item"><a href="#">Product</a></li>
+                                          <li class="breadcrumb-item active"><a href="#" class="text-capitalize">download
+                                              IMPS</a></li>
+                                        </ol>
+                                      </nav>
+                                </div>
+                                <ul class="list_container">
+                                    <li><a href="javascript:void(0)">FAQs</a></li>
+                                    <li><a href="javascript:void(0)">Knowledge Bytes</a></li>
+                                    <li><a href="javascript:void(0)">Reports</a></li>
+                                    <li><a href="javascript:void(0)">Online TnC</a></li>
+                                    <li><button class="btn btn-red" data-toggle="modal" data-target="#impsModal">Request</button></li>
+                                </ul>
+                                <div class="dropdown show">
+                                  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <span class="lines">&#9776;</span>
+                                  </a>
+                                
+                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">FAQs</a>
+                                    <a class="dropdown-item" href="#">Knowledge Bytes</a>
+                                    <a class="dropdown-item" href="#">Reports</a>
+                                    <a class="dropdown-item" href="#">Online TnC</a>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="Imps">
+                                <span class="subimps">
+                                    <span class="icon-Atm icon_imps"><span class="path1"></span><span class="path2"></span></span>
+                                    <span class="imps_text">IMPS Submembership</span>
+                                </span>
+                                <button class="btn btn-darkblue">Download Report</button>
+                            </div>
+                            <div class="account_details account_shadow">
+                                <span>Current Account Number: <span>XXXX XXXX 8797</span></span>
+                                <div class="complete_ndc">
+                                    <div class="ndc_value">
+                                        <span class="ndc_name">NDC Limit</span>
+                                        <span class="ndc_amount">&#8377; 50000.00</span>
+                                    </div> 
+                                    <div class="ndc_value">
+                                        <span class="ndc_name">Available NDC Limit</span>
+                                        <span class="ndc_amount">&#8377; 50000.00</span>
+                                    </div> 
+                                </div>
+                            </div>                 
+                            <!-- <div class="date_btns">
+                                <div class="from_date">
+                                    <input type="text" id="datepicker">
+                                    <label for="" class="from_label">From Date</label>
+                                </div>
+                                <div class="to_date">
+                                    <input type="text" id="datepicker">  
+                                    <label for="" class="to_label">To Date</label>      
+                                </div>
+                            </div>  -->
+                            <ul class="date_picker_outer_container date_content">
+                                <li class="date_picker_inner_container from_date">
+                                  <ul class="date_picker_container">
+                                    <li class="date_picker_content">
+                                      <input type='text' class="form-control date_picker_input" id='datepicker1'>
+                                      <label for="datapicker1" class="datapicker_label text-capitalize">
+                                        from date
+                                      </label>
+                                      <span class="icon-calendar date_image"></span>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li class="date_picker_inner_container from_date">
+                                  <ul class="date_picker_container">
+                                    <li class="date_picker_content">
+                                      <input type='text' class="form-control date_picker_input" id='datepicker2'>
+                                      <label for="datapicker2" class="datapicker_label text-capitalize">
+                                        To date
+                                      </label>
+                                      <span class="icon-calendar date_image"></span>
+                                    </li>
+                                  </ul>
+                                </li>
+                            </ul>     
+                            <span class="report">Statement Report</span>
+                            <div class="table_container">
+                                <ul class="account_table">
+    
+                                    <li class="account_header">
+                                        <div class="row">
+                                            <div class="col-1">
+                                                <input type="checkbox" name="" id="">
+                                            </div>
+                                            <div class="head col-2">Date</div>
+                                            <div class="head col-3">Particulars</div>
+                                            <div class="head col-2">Dr</div>
+                                            <div class="head col-2">Cr</div>
+                                            <div class="head col-2"></div>
+                                        </div>
+                                    </li>
+                                    <li class="account_content">
+                                        <div class="row">
+                                            <div class="col-1">
+                                                <input type="checkbox" name="" id="">
+                                            </div>
+                                            <div class="content col-2">23 Sept 21</div>
+                                            <div class="content col-3">Details will be here</div>
+                                            <div class="content col-2 value">Rs 4000</div>
+                                            <div class="content col-2 value">Rs 4000</div>
+                                            <div class="content col-2">
+                                                 <button class="btn btn-table">View</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="account_content">
+                                        <div class="row">
+                                            <div class="col-1">
+                                                <input type="checkbox" name="" id="">
+                                            </div>
+                                            <div class="content col-2">23 Sept 21</div>
+                                            <div class="content col-3">Details will be here</div>
+                                            <div class="content col-2 value">Rs 4000</div>
+                                            <div class="content col-2 value">Rs 4000</div>
+                                            <div class="content col-2">
+                                                 <button class="btn btn-table">View</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="account_content">
+                                        <div class="row">
+                                            <div class="col-1">
+                                                <input type="checkbox" name="" id="">
+                                            </div>
+                                            <div class="content col-2">23 Sept 21</div>
+                                            <div class="content col-3">Details will be here</div>
+                                            <div class="content col-2 value">Rs 4000</div>
+                                            <div class="content col-2 value">Rs 4000</div>
+                                            <div class="content col-2">
+                                                 <button class="btn btn-table">View</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="account_content">
+                                        <div class="row">
+                                            <div class="col-1">
+                                                <input type="checkbox" name="" id="">
+                                            </div>
+                                            <div class="content col-2">23 Sept 21</div>
+                                            <div class="content col-3">Details will be here</div>
+                                            <div class="content col-2 value">Rs 4000</div>
+                                            <div class="content col-2 value">Rs 4000</div>
+                                            <div class="content col-2">
+                                                 <button class="btn btn-table">View</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="account_content">
+                                        <div class="row">
+                                            <div class="col-1">
+                                                <input type="checkbox" name="" id="">
+                                            </div>
+                                            <div class="content col-2">23 Sept 21</div>
+                                            <div class="content col-3">Details will be here</div>
+                                            <div class="content col-2 value">Rs 4000</div>
+                                            <div class="content col-2 value">Rs 4000</div>
+                                            <div class="content col-2">
+                                                 <button class="btn btn-table">View</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+                                    
+                                   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="fluid-container">
+        <div class="modal fade" id="impsModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+               
+              
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <h5 class="modal-title">IMPS Requests</h5>
+                  <div class="modal-list">
+                    <p data-target="#changeRequest" type="button" data-toggle="modal" class="list-1">A/C No. Change Request</p>
+                    <hr>
+                    <p data-target="#ncdModification" type="button" data-toggle="modal" class="list-2">NDC Modification</p>
+                  </div>
+                  
+                </div>
+              
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="changeRequest" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+               
+              
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <h5 class="modal-title">Account number change request</h5>
+                  <div class="modal-list">
+                    <div id="inputFieldModal" class="col-6 col-sm-3 mb-3 firstInput">
+                      <input type="number" placeholder="Old Account Number">
+                    </div>
+                    <div id="inputFieldModal" class="col-6 col-sm-3 mb-3">
+                      <input type="number" placeholder="New Account Number">
+                    </div>
+                    <div id="inputFieldModal" class="col-6 col-sm-3 mb-3">
+                      <input type="number" placeholder="Confirm New Account Number">
+                    </div>
+                    <div class="changeRequestBtn" >
+                      <button class="btn btn-darkblue submit">Submit<span class="icon-arrow_icon"></span></button>
+                      <button class="btn btn-transparent reset_btn" style="margin-right: 19px;">Reset</button>
+                    </div>
+                    
+                    
+                  </div>
+                  
+                </div>
+              
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="ncdModification" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <h5 class="modal-title">IMPS - NCD Modification</h5>
+                  <div class="modal-list">
+                    <div class="ndc_amount_container">
+                      <div class="row mb-3 ncd-Heading">
+                        <div class="col-4"></div>
+                        <div class="col text-center">Existing</div>
+                        <div class="col text-center">Action</div>
+                        <div class="col text-center">Amount</div>
+                      </div>
+                      <div class="row justify-content-between">
+                        <div class="col-4 ndcAmount">NDC Amount</div>
+                        <div class="col text-center">
+                          
+                            <input type="number" class="inputNDC" placeholder="Rs. 500">
+                        
+                        </div>
+                        <div class="col-3 text-center">
+                          <button class="col addBtn">&plus;</button>
+                          <button class="col ReduceBtn">&minus;</button>
+                        </div>
+                        <div class="col text-center">
+                          <input style="margin-right: 20px;" type="number" class="inputNDC" placeholder="Rs. 200">
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <hr>
+                    <div class="current_container">
+                      <div class="row row-3">
+                        <div class="col-4">
+                          Current
+                          <input type="number" class="inputNDC" placeholder="Rs. 400">
+                        </div>
+                        <div class="col-4">Lien Amount
+                          <input type="number" class="inputNDC" placeholder="Rs. 400">
+                        </div>
+                        <div class="col-4 p-0" >
+                          
+                          CA Multiplier
+                          <input type="number" class="inputNDC" placeholder="Rs. 400">
+                          
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="changeRequestBtn" >
+                      <button class="btn btn-darkblue submit">
+                        <span>Submit</span> 
+                        <span class="icon-arrow_icon"></span>
+                      </button>
+                      <button class="btn btn-transparent reset_btn" >Reset</button>
+                    </div>
+                  </div>
+    
+                </div>
+              
+              </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+<!-- Normal JS -->
+<script src="./js/jquery.js"></script>
+<script src="./js/bootstrap-datepicker.min.js"></script>
+<script src="js/browser-class.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Minified Combine JS -->
+<!-- <script src="js/bundle.min.js"></script> -->
+
+</html>

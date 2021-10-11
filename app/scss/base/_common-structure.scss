@@ -1,0 +1,65 @@
+.date_btns {
+    .from_date {
+        margin-right: 2.1rem;
+    }
+    input {
+        border-radius: 2.4rem;
+        border: 0.75px solid $input-border;
+        background-color: $white;
+        min-width: 135px;
+        padding: 0.7rem 0 0.7rem 2.2rem;
+        &:focus {
+            border: 0.75px solid $input-border;
+            outline: none;
+        }
+        // &:first-child {
+        // }
+    }
+}
+
+.date_picker_outer_container {
+    display: flex;
+    position: relative;
+    @include breakpoint(portrait-mobile-max){
+        flex-direction: column;
+    }
+    .date_picker_content {
+        position: relative;
+        .date_picker_input {
+            cursor: pointer;
+            border-radius: 2.4rem;
+            border: 0.75px solid $input-border;
+            background-color: $white;
+            min-width: 135px;
+            padding: 0.7rem 0 0.7rem 2.2rem;
+            &:focus {
+                border: 0.75px solid $input-border;
+                outline: none;
+                box-shadow: none;
+            }
+
+            &::placeholder {
+                text-align: start;
+            }
+        }
+        &:first-child {
+            margin-right: 17px;
+            margin-bottom: 20px;
+        }
+        .datapicker_label {
+            position: absolute;
+            top: 50%;
+            left: 34%;
+            transform: translate(-50%, -50%);
+            margin-bottom: 0;
+            font-size: 1.2rem;
+            font-family: $primary-font;
+            font-weight: 400;
+            cursor: pointer;
+        }
+    }
+}
+
+.user-details-wraper {
+    margin-top: 2px;
+}

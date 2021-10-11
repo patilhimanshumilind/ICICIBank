@@ -1,0 +1,110 @@
+.userAccount {
+    .Account_container {
+        .Imps {
+            padding: 1.7rem 0 1.7rem 3.9rem;
+            @include flexBox(flex, row, center, space-between);
+            @include breakpoint(portrait-mobile-max) {
+                @include flexBox(flex, column, flex-start, flex-start);
+            }
+            .subimps {
+                padding-bottom: 15px;
+                .imps_text {
+                    font-family: $primary-font;
+                    font-weight: 700;
+                    font-size: 1.7rem;
+                    color: $light-blue;
+                    margin-left: 1.6rem;
+                }
+                .icon_imps {
+                    width: 3.2rem;
+                    height: 2.2rem;
+                    font-size: 2rem;
+                }
+            }
+            button {
+                margin: 0 4.5rem 0 0 ;
+            }
+        }
+        .account_details.account_shadow {
+            box-shadow: 0 10px 30px 0px rgba(78,145,209,0.15);
+            @include flexBox(flex, row, center, space-between);
+            color: $black;
+            padding: 2.1rem 6.9rem 1.7rem 3.9rem;
+            border-bottom: 1px solid $light-border-color;
+            background-color: $white;
+            @include breakpoint(ipad-max) {
+                @include flexBox(flex, column, flex-start, flex-start);
+            }
+            @include breakpoint(portrait-mobile-max) {
+                padding: 2.1rem 2.9rem 1.7rem 3.9rem;
+            }
+            span {
+                line-height: 1.4rem;
+                font-size: 1.2rem;
+                font-family: $primary-font;
+                font-weight: 600;
+                @include breakpoint(ipad-max) {
+                    padding-bottom: 15px;
+                }
+
+            }
+            .complete_ndc {
+                @include flexBox(flex, row, center, center);
+                @include breakpoint(portrait-mobile-max) {
+                    @include flexBox(flex, column, flex-start, flex-start);
+                }
+                .ndc_value {
+                    @include breakpoint(portrait-mobile-max) {
+                        padding-bottom: 10px;
+                        width: 100%;
+                        
+                    }
+                    &:first-child {
+                        margin-right: 6.8rem;
+                        @include breakpoint(portrait-mobile-max) {
+                            margin-right: 0;
+                        }
+                    }
+                    .ndc_name {
+                        margin-right: 21px;
+                        font-family: $primary-font;
+                        font-size: 1.4rem;
+                        color: rgba(0,0,0,0.57);
+                        line-height: 1.9rem;
+                        font-weight: 400;
+                    }
+                    .ndc_amount {
+                        font-family: $primary-font;
+                        font-size: 1.8rem;
+                        color: $light-blue;
+                        line-height: 1.9rem;
+                        margin-right: 21px;
+                        font-weight: 700;
+                        white-space: nowrap;
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .date_content {
+            margin: 2.4rem 3rem 0 0;
+            @include flexBox(flex, row, center, flex-end);
+            @include breakpoint(portrait-mobile-max) {
+                @include flexBox(flex, row, flex-start, flex-start);
+                margin: 2.4rem 0 0 3rem;
+            }
+            @include breakpoint(custom-small-mobile-max) {
+                @include flexBox(flex, column, flex-start, flex-start);
+            }
+        };
+        .report {
+            font-family: $primary-font;
+            font-size: 1.7rem;
+            font-weight: 400;
+            color: $light-blue;
+            padding: 0 0 0 3.9rem;
+        }
+    }
+}
