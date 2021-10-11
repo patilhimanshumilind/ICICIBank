@@ -6,10 +6,16 @@
         border-radius: 2.5rem;
         padding: 1.4rem 2.2rem;
         font-size: 1.4rem;
+        @include breakpoint(mobile-max){
+            font-size: 1.2rem;
+        }
         &::placeholder{
             color: $black;
             font-size: 1.4rem;
             letter-spacing: 0.05rem;
+            @include breakpoint(mobile-max){
+                font-size: 1.2rem;
+            }
         }
         &:focus{
             border: 0.1rem solid $input-border;
