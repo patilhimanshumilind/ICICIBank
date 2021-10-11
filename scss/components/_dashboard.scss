@@ -1,0 +1,61 @@
+.dashboard_imps {
+    padding: 1.2rem 3.0rem 1.2rem 2.9rem;
+    @include flexBox(flex, row, center, space-between);
+
+
+
+    .breadcrumb_container {
+        // padding-left: 2.9rem;
+        nav {
+            .breadcrumb {
+                background-color: transparent;
+                margin-bottom: 0;
+                .breadcrumb-item {
+                    
+                    a {
+                        line-height: 1.9rem;
+                        color: $black;
+                        font-family: $primary-font;
+                        font-weight: 600;
+                        font-size: 1.4rem;
+                        @include breakpoint(desktop-max) {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+                .breadcrumb-item + .breadcrumb-item::before {
+                    content: ">";
+                }
+            }
+        }
+    }
+
+    .list_container {
+        @include flexBox(flex, row, center, space-between);
+        li {
+            padding: 0 21px;
+
+            &:first-child {
+                padding: 0 21px 0 0;
+            }
+            &:last-child {
+                padding: 0 0 0 21px;
+            }
+
+            a {
+                line-height: 1.9rem;
+                color: $black;
+                font-family: $primary-font;
+                font-weight: 600;
+                font-size: 1.4rem;
+                transition: 0.2s all;
+                @include breakpoint(desktop-max) {
+                    font-size: 1.2rem;
+                }
+                &:hover {
+                    color: $orange-shade2;
+                }
+            }
+        }
+    }
+}

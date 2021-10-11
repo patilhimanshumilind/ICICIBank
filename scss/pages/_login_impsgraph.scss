@@ -1,0 +1,319 @@
+.main-content{
+    background-color: $graph-bg;
+    border-top-left-radius: 20px;
+}
+
+.graph-wrapper{
+    width: 980px;
+    margin: 20px 20px 0px 15px;
+    p{
+        font-size: 20px;
+    }
+    .graph-grid{
+        width: 470px;
+        height: 279px;
+        background-color: $white;
+        border-radius: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        .head_container {
+            @include flexBox(flex, row, center, space-between);
+            margin: 1.6rem 0.5rem 0 2.5rem;
+            
+        }
+        .select_wrap-container {
+            .select_wrap {
+                max-width: 8.1rem;
+                height: 2.4rem;
+                border: 0.8px solid $graph-border;
+                border-radius: 1.2rem;
+                background-color: $dropdown-graph;
+                &:focus {
+                    outline: none;
+                }
+            }
+            div.fancy-select {
+                div.trigger {
+                    width: 81px;
+                    height: 24px;
+                    border-radius: 2rem;
+                    background-color: $dropdown-graph;
+                    color: $black;
+                    font-weight: 600;
+                    font-family: $primary-font;
+                    outline: none;
+                    border-color: $graph-border;
+                    font-size:11px;
+                    box-shadow: none;
+                    padding: 5px 17px;
+                    text-transform: capitalize;
+                    line-height: 1.5;
+
+                    @include flexBox(flex, row, center, flex-start);
+                    &::after {
+                        content: "\e901";
+                        font-family: "icomoon";
+                        top: 7px;
+                        border: none;
+                        font-size: 0.6rem;
+                        right: 19px;
+                    }
+                }
+                ul.options {
+                    left: -12rem;
+                    top: 27px;
+                    background-color:  $dropdown-graph;
+                    border-color: $graph-border;
+
+                    li {
+                        color: $black;
+                        font-weight: 600;
+                        font-family: $primary-font;
+                        &:hover {
+                            opacity: 0.5;
+                        }
+                    }
+                }
+            }
+        }
+        .graph-grid-heading{
+            position: relative;
+            font-size: 20px;
+            font-weight: bold;
+            color: $light-blue;
+            margin-top: 1.2rem;
+        }
+        .graph-grid-content{
+            margin-top: 0.8rem;
+            
+            .graph-grid-left{
+                position: relative;
+                margin-top: 1.5rem;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: -45%;
+                    top: 0;
+                    width: 50%;
+                    height: 100%;
+                    border-radius: 0 15px 15px 0px;
+                    opacity: 68%;
+                    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.04), rgba(255, 255, 255, 0));
+                }
+                div:first-child {
+                    opacity: 0.8;
+                }
+                div{
+                    margin-bottom: 10px;
+                    padding-left: 2px;
+                    font-family: $primary-font;
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    color: $black;
+                   
+                    span{
+                        font-weight: 600;
+                        font-size: 11px;
+                    }
+
+                    .outward_transaction {
+                        margin-bottom: 10px;
+                        padding-left: 2px;
+                        font-family: $primary-font;
+                        font-size: 1.1rem;
+                        font-weight: 600;
+                        color: $black;
+                        opacity: 0.8;
+                    }
+                }
+                .grid-amount{
+                    font-size: 1.9rem;
+                    font-weight: 600;
+                    color: $light-blue;
+                    font-family: $primary-font;
+                }
+                .outward-amount {
+                    font-size: 1.9rem;
+                    font-weight: 600;
+                    color: $bell-bg;
+                    font-family: $primary-font;
+                }
+                .dashed-border{
+                    position: relative;
+                    top:-60px;
+                    border:none;
+                    border-bottom: 0.1rem dashed rgba($color: $border-color, $alpha: 0.52);
+                    padding: 50px;
+                }
+            }
+            .grid-graph-right{
+                .highcharts-plot-line  {
+                        position: relative;
+                        filter: drop-shadow(0px 4px 5px black);
+                        z-index: -1;
+                }
+                height: 200px;
+                width: 100px;
+                .highcharts-point.highcharts-color-0{
+                    width: 10px;
+                }
+            }
+        }
+    }
+    #graph-container{
+        width: 280px;
+        height: 200px;
+    }
+    #graph-container1{
+        width: 280px;
+        height: 200px;
+    }
+    #graph-container2{
+        width: 280px;
+        height: 200px;
+    }
+    #graph-container3{
+        width: 280px;
+        height: 200px;
+    }
+    .graph-dropdown{
+        float: right;
+        button{
+            width: 81px;
+            height: 24px;
+            border-radius: 2rem;
+            background-color: #FFE5CB;
+            color: #000000;
+            font-weight: 600;
+            outline: none;
+            border-color: #E8B98A;
+            font-size:11px;
+        }
+    }
+}
+.highcharts-title{
+    display:none;
+}
+.highcharts-credits{
+    display:none;
+}
+.highcharts-point {
+    width: 10px;
+}
+
+.highcharts-no-tooltip.highcharts-button.highcharts-contextbutton{
+    display:none;
+}
+.highcharts-point.highcharts-color-0{
+    fill: #AED2EF;
+    width: 10px;
+   
+}
+.highcharts-point.highcharts-negative.highcharts-color-0{
+    fill: #E98421;
+    width: 10px;
+    opacity: 62%;
+   
+}
+
+.highcharts-point.highcharts-color-0{
+    fill: #AED2EF;
+    width: 10px;
+    stroke:#45779F;
+    stroke-opacity: 62%;
+}
+.highcharts-point.highcharts-negative{
+    fill: rgba(233, 132, 33, 0.38) !important;
+    width: 10px !important;
+    opacity: 35%;
+    stroke:#EF9F51 !important;
+    stroke-opacity: 100% !important;
+}
+
+@media (max-width: 576px){
+    .graph-wrapper{
+        
+           .graph-grid{
+               margin-right: 0!important;
+               flex: 0 0 100%!important;
+
+               .graph-grid-content{
+                .graph-grid-left{
+                    
+                    .grid-amount{
+                        font-size: 15px!important;
+                    }
+                    .outward-amount{
+                        font-size: 15px!important;
+                    }
+                   
+                }
+                
+            }
+                
+        
+        }
+        
+}
+}
+
+@media (max-width: 767px){
+    .main-content{
+        padding: 15px 15px 15px!important;
+        margin: 0 10px 10px;
+        border-radius: 20px!important;
+    }
+    .graph-wrapper{
+        width: auto!important;
+        margin: 0!important;
+        .graph-grid{
+            width: 100%!important;
+            height: 100%!important;
+            margin-right: 0!important;
+             margin-bottom: 15px!important;
+               &:last-child{
+                margin-bottom: 0!important;
+               }
+           
+            .head_container{
+                margin: 1.6rem 0 0 0!important;
+            }
+            .graph-grid-content{
+                .graph-grid-left{
+                    padding: 0!important;
+                    div{
+                        padding: 0!important;
+                    }
+                   
+                    .dashed-border{
+                        padding: 50px 36px 50px!important;
+                    }
+                }
+                .col-8{
+                    padding: 0!important;
+                }
+                .grid-graph-right{
+                    height: 100%!important;
+                    width: auto!important;
+                }
+            }
+        }
+        #graph-container{
+            width: 100%!important;
+            height: 100%!important;
+        }
+        #graph-container1{
+            width: 100%!important;
+            height: 100%!important;
+        }
+        #graph-container2{
+            width: 100%!important;
+            height: 100%!important;
+        }
+        #graph-container3{
+            width: 100%!important;
+            height: 100%!important;
+        }
+    }
+}
+

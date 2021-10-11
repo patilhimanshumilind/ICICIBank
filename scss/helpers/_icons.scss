@@ -1,0 +1,95 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?wwh7zr');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?wwh7zr#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?wwh7zr') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?wwh7zr') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?wwh7zr##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  // speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow_icon:before {
+  content: "\e900";
+  color: #fff;
+}
+.icon-Today_icon:before {
+  content: "\e901";
+}
+.icon-notification:before {
+  content: "\e902";
+  color: #fff;
+}
+.icon-setting:before {
+  content: "\e903";
+}
+.icon-dashboard .path1:before {
+  content: "\e904";
+  color: rgb(166, 35, 33);
+}
+.icon-dashboard .path2:before {
+  content: "\e905";
+  margin-left: -1.111328125em;
+  color: rgb(233, 132, 33);
+}
+.icon-dashboard .path3:before {
+  content: "\e906";
+  margin-left: -1.111328125em;
+  color: rgb(233, 132, 33);
+}
+.icon-IMPS:before {
+  content: "\e907";
+}
+.icon-CTS .path1:before {
+  content: "\e908";
+  color: rgb(0, 0, 0);
+}
+.icon-CTS .path2:before {
+  content: "\e909";
+  margin-left: -1.5849609375em;
+  color: rgb(0, 0, 0);
+}
+.icon-CTS .path3:before {
+  content: "\e90a";
+  margin-left: -1.5849609375em;
+  color: rgb(22, 22, 21);
+}
+.icon-CTS .path4:before {
+  content: "\e90b";
+  margin-left: -1.5849609375em;
+  color: rgb(22, 22, 21);
+}
+.icon-CTS .path5:before {
+  content: "\e90c";
+  margin-left: -1.5849609375em;
+  color: rgb(0, 0, 0);
+}
+.icon-Atm .path1:before {
+  content: "\e90d";
+  color: rgb(255, 255, 255);
+}
+.icon-Atm .path2:before {
+  content: "\e90e";
+  margin-left: -1.470703125em;
+  color: rgb(0, 0, 0);
+}
+
+
