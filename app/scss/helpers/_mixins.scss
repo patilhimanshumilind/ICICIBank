@@ -30,7 +30,7 @@ $breakpoints: (
   @else {
     @warn "Couldn't find a breakpoint named `#{$name}`.";
   }
-}	
+} 
 
 // Opacity
 @mixin opacity($opacity) {
